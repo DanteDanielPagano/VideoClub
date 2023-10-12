@@ -7,5 +7,6 @@
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public int UpdatedBy { get; set; } = 0;
         public DateTime UpdatedDate { get; set; } = DateTime.UtcNow;
+        public bool IsDeleted { get; set; } = false;
     }
 }

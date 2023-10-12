@@ -1,13 +1,12 @@
 ﻿using VideoClub.Entities.Entities;
+using VideoClub.Etities.Interfaces.Repositories;
 
 namespace VideoClub.Entities.Interfaces.Repositories
 {
-    public interface IGeneroRepository : IUnitOfWork
+    public interface IGeneroRepository : IRepositoroGenerico<Genero>
     {
         Task<Genero> GetById(int generoId);
-        Task Create(Genero genero);
-        Task Update(Genero genero);
-        Task Delete(int generoId);
+
         Task<List<Genero>> GetAllGeneros();
     }
 }

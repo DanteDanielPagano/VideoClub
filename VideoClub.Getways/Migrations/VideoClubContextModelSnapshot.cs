@@ -16,7 +16,7 @@ namespace VideoClub.Repository.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.11")
+                .HasAnnotation("ProductVersion", "7.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("VideoClub.Entities.Entities.Actor", b =>
@@ -31,6 +31,9 @@ namespace VideoClub.Repository.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("NombreActor")
                         .IsRequired()
@@ -71,6 +74,9 @@ namespace VideoClub.Repository.Migrations
                     b.Property<int>("IdCategoria")
                         .HasColumnType("int")
                         .HasColumnName("idcategoria");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("Poster")
                         .IsRequired()
@@ -119,6 +125,9 @@ namespace VideoClub.Repository.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<string>("NombreCategoria")
                         .IsRequired()
                         .HasMaxLength(45)
@@ -148,6 +157,9 @@ namespace VideoClub.Repository.Migrations
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("NombreGenero")
                         .IsRequired()

@@ -13,12 +13,10 @@ namespace VideoClub.WebApi.EndPoint.Actor
                 if (actors == null)
                 {
                     return Results.StatusCode(StatusCodes.Status500InternalServerError);
-
                 }
                 else if (actors.ErrorNumber != 0 && !string.IsNullOrEmpty(actors.Message))
                 {
                     return Results.BadRequest(actors);
-
                 }
                 {
                     return Results.Ok(actors);

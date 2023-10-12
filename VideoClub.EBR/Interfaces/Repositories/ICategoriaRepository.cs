@@ -1,13 +1,12 @@
 ﻿using VideoClub.Entities.Entities;
+using VideoClub.Etities.Interfaces.Repositories;
 
 namespace VideoClub.Entities.Interfaces.Repositories
 {
-    public interface ICategoriaRepository : IUnitOfWork
+    public interface ICategoriaRepository : IRepositoroGenerico<Categoria>
     {
         Task<Categoria> GetById(int categoriaId);
-        Task Create(Categoria categoria);
-        Task Update(Categoria categoria);
-        Task Delete(int categoriaId);
+
         Task<List<Categoria>> GetAllCategorias();
     }
 }

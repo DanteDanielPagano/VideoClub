@@ -1,11 +1,11 @@
-﻿namespace VideoClub.Repository.PersonalException
+﻿namespace VideoClub.BusinessRules.PersonalException
 {
-    public class DBException : Exception
+    public class DBMySqlException : Exception
     {
 
         public int Number { get; set; }
         public string MessageError { get; set; }
-        public DBException(int number, string message)
+        public DBMySqlException(int number, string message)
         {
             switch (number)
             {
@@ -22,6 +22,8 @@
                     MessageError = "La base de datos no existe.";
                     break;
                 default:
+                    Number = number;
+                    MessageError = message;
                     break;
             }
         }

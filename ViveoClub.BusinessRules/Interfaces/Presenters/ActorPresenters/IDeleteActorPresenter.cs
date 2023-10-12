@@ -13,6 +13,6 @@ namespace VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters
         /// Propiedad Actor que contiene detalles sobre la operación
         /// de eliminación.
         /// </summary>
-        WrapperCreateDeleteActor Actor { get; }
+        WrapperDeleteActor Actor { get; }
     }
 }

@@ -2,11 +2,14 @@
 {
     public class DeleteActorPresenter : IDeleteActorPresenter
     {
-        public WrapperCreateDeleteActor Actor => throw new NotImplementedException();
+        public WrapperDeleteActor Actor { get; private set; } = new WrapperDeleteActor();
 
-        public Task Handle(WrapperCreateDeleteActor actor)
+        public Task Handle(WrapperDeleteActor actor)
         {
-            throw new NotImplementedException();
+            Actor.ErrorNumber = actor.ErrorNumber;
+            Actor.Message = actor.Message;
+            Actor.IdActor = actor.IdActor;
+            return Task.CompletedTask;
         }
     }
 }

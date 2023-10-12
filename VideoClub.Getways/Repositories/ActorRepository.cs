@@ -1,6 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using VideoClub.Repository.PersonalException;
-
+using VideoClub.BusinessRules.PersonalException;
 namespace VideoClub.Repository.Repositories
 {
     public class ActorRepository : IActorRepository
@@ -20,14 +19,28 @@ namespace VideoClub.Repository.Repositories
             }
             catch (MySqlException ex)
             {
-
-                throw new DBException(ex.Number, ex.Message);
+                throw new DBMySqlException(ex.Number, ex.Message);
             }
         }
 
-        public Task Delete(int actorId)
+        public async Task Delete(int actorId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var result = await _context.Actors.FirstOrDefaultAsync(a => a.Id == actorId && a.IsDeleted == false);
+                if (result != null)
+                {
+                    result.IsDeleted = true;
+                }
+                else
+                {
+                    throw new DBMySqlException(404, "El registro no fue encontrado");
+                }
+            }
+            catch (MySqlException ex)
+            {
+                throw new DBMySqlException(ex.Number, ex.Message);
+            }
         }
 
         public async Task<List<Actor>> GetAllActors()
@@ -35,13 +48,13 @@ namespace VideoClub.Repository.Repositories
             try
             {
                 List<Actor> result = new List<Actor>();
-                result = await _context.Actors.ToListAsync();
+                result = await _context.Actors.Where(a => a.IsDeleted == false).ToListAsync();
                 return result;
             }
             catch (MySqlException ex)
             {
 
-                throw new DBException(ex.Number, ex.Message);
+                throw new DBMySqlException(ex.Number, ex.Message);
             }
 
         }
@@ -58,7 +71,7 @@ namespace VideoClub.Repository.Repositories
             catch (MySqlException ex)
             {
 
-                throw new DBException(ex.Number, ex.Message);
+                throw new DBMySqlException(ex.Number, ex.Message);
             }
         }
 

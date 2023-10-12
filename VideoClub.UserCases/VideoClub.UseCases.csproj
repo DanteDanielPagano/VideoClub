@@ -12,8 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VideoClub.EBR\VideoClub.Etities.csproj" />
-    <ProjectReference Include="..\VideoClub.Getways\VideoClub.Repository.csproj" />
-    <ProjectReference Include="..\ViveoClub.BusinessRules\ViveoClub.BusinessRules.csproj" />
+    <ProjectReference Include="..\ViveoClub.BusinessRules\VideoClub.BusinessRules.csproj" />
   </ItemGroup>
 
 </Project>

@@ -12,7 +12,7 @@ namespace VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.OutputPort
         /// de Eliminación de un Actor en el contexto.
         /// </summary>
         /// <param name="idActor">Recibir el Id del actor que se eliminó</param>
-        Task Handle(WrapperCreateDeleteActor actor);
+        Task Handle(WrapperDeleteActor actor);
     }
 
 }

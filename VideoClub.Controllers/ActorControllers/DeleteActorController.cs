@@ -1,10 +1,22 @@
-﻿namespace VideoClub.Controllers.ActorControllers
+﻿using VideoClub.BusinessRules.Wrappers.Actor;
+
+namespace VideoClub.Controllers.ActorControllers
 {
     public class DeleteActorController : IDeleteActorController
     {
-        public Task<ActorResponse> DeletetActor(int IdActor)
+        readonly IDeleteActorInputPort _inputPort;
+        readonly IDeleteActorPresenter _presenter;
+
+        public DeleteActorController(IDeleteActorInputPort inputPort, IDeleteActorPresenter presenter)
         {
-            throw new NotImplementedException();
+            _inputPort = inputPort;
+            _presenter = presenter;
+        }
+
+        public async Task<WrapperDeleteActor> DeletetActor(int IdActor)
+        {
+            await _inputPort.Handle(IdActor);
+            return _presenter.Actor;
         }
     }
 }

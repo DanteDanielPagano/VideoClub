@@ -1,8 +1,8 @@
 ﻿using VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.InputPorts;
 using VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters;
+using VideoClub.BusinessRules.PersonalException;
 using VideoClub.BusinessRules.Wrappers.Actor;
 using VideoClub.Entities.Interfaces.Repositories;
-using VideoClub.Repository.PersonalException;
 using static VideoClub.BusinessRules.Wrappers.Actor.WrapperSelectAllActors;
 
 namespace VideoClub.UseCases.UseCases.ActorUseCase
@@ -43,7 +43,7 @@ namespace VideoClub.UseCases.UseCases.ActorUseCase
                 }
 
             }
-            catch (DBException ex)
+            catch (DBMySqlException ex)
             {
                 actorsResponse.ErrorNumber = ex.Number;
                 actorsResponse.Message = ex.MessageError;

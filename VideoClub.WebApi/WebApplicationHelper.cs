@@ -59,6 +59,7 @@ namespace VideoClub.WebApi
             app.GetAllActorEndPoint();
             app.GetActorEndPoint();
             app.CreateActorEndPoint();
+            app.DeleteActorEndPoint();
 
             // Agregar el Middleware CORS
             app.UseCors();

@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UseCases", "UseCases", "{02
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessObject", "BusinessObject", "{41BB12EF-C4D1-4FAA-AE9B-7AF46D148673}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViveoClub.BusinessRules", "ViveoClub.BusinessRules\ViveoClub.BusinessRules.csproj", "{687D9CB3-70E8-41E7-A14A-1D5928D57AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.BusinessRules", "ViveoClub.BusinessRules\VideoClub.BusinessRules.csproj", "{687D9CB3-70E8-41E7-A14A-1D5928D57AD1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.UseCases", "VideoClub.UserCases\VideoClub.UseCases.csproj", "{5F8693A8-627D-49A6-B582-8757C46CD2A9}"
 EndProject
@@ -25,27 +25,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.InterfaceAdapter", "03.I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{2816173E-CD36-4C4A-A3D4-12C3D32FED04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub.Controllers", "VideoClub.Controllers\VideoClub.Controllers.csproj", "{96B015D1-1181-42DC-840E-D1510FCF5BBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.Controllers", "VideoClub.Controllers\VideoClub.Controllers.csproj", "{96B015D1-1181-42DC-840E-D1510FCF5BBF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{3F84F528-F2E1-4D62-BEF9-D10B0F597FB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub.Presenters", "VideoClub,Presenters\VideoClub.Presenters.csproj", "{A1A677F4-D75F-46B7-B09C-EE0A428877CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.Presenters", "VideoClub,Presenters\VideoClub.Presenters.csproj", "{A1A677F4-D75F-46B7-B09C-EE0A428877CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getways", "Getways", "{0536DD0B-AA89-4E64-9468-A0D968A1B728}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{EBBFE5EB-6720-4728-B86C-314EF406D38C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub.Repository", "VideoClub.Getways\VideoClub.Repository.csproj", "{1B44707F-6A28-4D79-9220-CB4C5ED1C23C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.Repository", "VideoClub.Getways\VideoClub.Repository.csproj", "{1B44707F-6A28-4D79-9220-CB4C5ED1C23C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Frameworks&Drivers", "04.Frameworks&Drivers", "{E80945AE-D0BC-465D-AB25-363E7509B671}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{F46BC7B7-2E84-4C13-8F74-AF4594FDDC8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub.WebApi", "VideoClub.WebApi\VideoClub.WebApi.csproj", "{831047CD-D0FD-4C5C-A8FD-1976B4824EED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.WebApi", "VideoClub.WebApi\VideoClub.WebApi.csproj", "{831047CD-D0FD-4C5C-A8FD-1976B4824EED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInversion", "DependencyInversion", "{44C68B4E-6046-47D8-A77C-5379F37B3906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub.DependencyInversion", "VideoClub.DependencyInversion\VideoClub.DependencyInversion.csproj", "{16B71B07-2BD7-4FFD-AE81-8AB6F090A4CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoClub.DependencyInversion", "VideoClub.DependencyInversion\VideoClub.DependencyInversion.csproj", "{16B71B07-2BD7-4FFD-AE81-8AB6F090A4CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
