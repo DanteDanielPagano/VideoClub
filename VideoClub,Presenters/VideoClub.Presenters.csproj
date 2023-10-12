@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>VideoClub_Presenters</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VideoClub.Getways\VideoClub.Repository.csproj" />
+    <ProjectReference Include="..\ViveoClub.BusinessRules\ViveoClub.BusinessRules.csproj" />
+  </ItemGroup>
+
+</Project>

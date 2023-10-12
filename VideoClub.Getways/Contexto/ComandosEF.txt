@@ -1,0 +1,4 @@
+﻿Add-Migration InitialCreate -p VideoClub.Repository -s VideoClub.Repository -c VideoClubContext
+
+
+Update-Database -p VideoClub.Repository -s VideoClub.Repository -context VideoClubContext

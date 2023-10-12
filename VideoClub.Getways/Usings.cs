@@ -1,0 +1,10 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using MySql.EntityFrameworkCore.Extensions;
+global using System.Reflection;
+global using VideoClub.Entities.Entities;
+global using VideoClub.Entities.Interfaces.Repositories;
+global using VideoClub.Repository.Contexto.VideoClub.Repository.Contexto;
+global using VideoClub.Repository.Repositories;
