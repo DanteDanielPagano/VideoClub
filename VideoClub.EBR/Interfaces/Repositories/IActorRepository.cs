@@ -9,6 +9,7 @@ namespace VideoClub.Entities.Interfaces.Repositories
         Task Update(Actor actor);
         Task Delete(int actorId);
         Task<List<Actor>> GetAllActors();
+        //Task<List<Actor>> GetAllActorsByName(string name);
     }
 }
 

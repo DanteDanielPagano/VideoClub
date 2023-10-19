@@ -64,7 +64,7 @@ namespace VideoClub.Repository.Repositories
             try
             {
                 Actor result = new Actor();
-                result = await _context.Actors.FindAsync(actorId);
+                result = await _context.Actors.FirstOrDefaultAsync(a => a.Id == actorId && a.IsDeleted == false);
                 return result;
 
             }

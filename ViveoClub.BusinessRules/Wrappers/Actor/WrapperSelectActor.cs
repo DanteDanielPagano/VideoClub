@@ -1,8 +1,10 @@
-﻿namespace VideoClub.BusinessRules.Wrappers.Actor
+﻿using VideoClub.BusinessRules.DTOs.ActorDTOs;
+
+namespace VideoClub.BusinessRules.Wrappers.Actor
 {
     public class WrapperSelectActor : BaseWrappers
     {
-        public int IdActor { get; set; }
-        public String? NombreActor { get; set; }
+        public ActorResponse Actor { get; set; }
+
     }
 }

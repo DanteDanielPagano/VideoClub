@@ -3,8 +3,8 @@
     public class DBMySqlException : Exception
     {
 
-        public int Number { get; set; }
-        public string MessageError { get; set; }
+        public int Number { get; private set; }
+        public string MessageError { get; private set; }
         public DBMySqlException(int number, string message)
         {
             switch (number)

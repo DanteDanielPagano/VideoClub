@@ -17,7 +17,7 @@ namespace VideoClub.WebApi
 
             // Registrar los servicios de la aplicación
             builder.Services.AddVideoClubServices(
-                builder.Configuration, "VideoClubDB");
+                builder.Configuration, "MySqlVideoClubDB");
 
             // Agregar el servicio CORS para clientes que se ejecutan
             // en el navegador Web (como Blazor WebAssembly).

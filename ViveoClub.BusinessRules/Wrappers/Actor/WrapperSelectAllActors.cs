@@ -1,15 +1,12 @@
-﻿namespace VideoClub.BusinessRules.Wrappers.Actor
+﻿using VideoClub.BusinessRules.DTOs.ActorDTOs;
+
+namespace VideoClub.BusinessRules.Wrappers.Actor
 {
 
     public class WrapperSelectAllActors : BaseWrappers
     {
-        public List<Actor>? Actors { get; set; } = new List<Actor>();
+        public List<ActorResponse>? Actors { get; set; } = new List<ActorResponse>();
 
-        public class Actor
-        {
-            public int IdActor { get; set; }
-            public string NombreActor { get; set; }
-        }
     }
 }
 
