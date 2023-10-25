@@ -6,6 +6,7 @@
 
         public Task Handle(WrapperCreateDeleteActor actor)
         {
+
             Actor.ErrorNumber = actor.ErrorNumber;
             Actor.ValidationErrors = actor.ValidationErrors;
             Actor.Message = actor.Message;

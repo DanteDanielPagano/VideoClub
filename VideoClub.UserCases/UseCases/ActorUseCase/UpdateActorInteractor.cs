@@ -1,11 +1,11 @@
-﻿using VideoClub.Entities.Entities;
-using VideoClub.Entities.Interfaces.Repositories;
-using VideoClub.UseCases.Specifications.ActorSpecifications;
-using VideoClub.BusinessRules.DTOs.ActorDTOs;
+﻿using VideoClub.BusinessRules.DTOs.ActorDTOs;
 using VideoClub.BusinessRules.DTOs.ValidationDTO;
 using VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.InputPorts;
 using VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters;
 using VideoClub.BusinessRules.Wrappers.Actor;
+using VideoClub.Entities.Entities;
+using VideoClub.Entities.Interfaces.Repositories;
+using VideoClub.UseCases.Specifications.ActorSpecifications;
 
 namespace VideoClub.UseCases.UseCases.ActorUseCase
 {

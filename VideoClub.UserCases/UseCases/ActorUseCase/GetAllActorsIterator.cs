@@ -1,9 +1,9 @@
-﻿using VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.InputPorts;
+﻿using VideoClub.BusinessRules.DTOs.ActorDTOs;
+using VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.InputPorts;
 using VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters;
 using VideoClub.BusinessRules.PersonalException;
 using VideoClub.BusinessRules.Wrappers.Actor;
 using VideoClub.Entities.Interfaces.Repositories;
-using static VideoClub.BusinessRules.Wrappers.Actor.WrapperSelectAllActors;
 
 namespace VideoClub.UseCases.UseCases.ActorUseCase
 {
@@ -29,7 +29,7 @@ namespace VideoClub.UseCases.UseCases.ActorUseCase
                 {
                     foreach (var actor in existingActors)
                     {
-                        actorsResponse.Actors.Add(new Actor
+                        actorsResponse.Actors.Add(new ActorResponse
                         {
                             IdActor = actor.Id,
                             NombreActor = actor.NombreActor

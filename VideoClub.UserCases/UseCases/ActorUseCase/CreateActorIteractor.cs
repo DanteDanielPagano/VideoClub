@@ -1,12 +1,13 @@
 ﻿
-using VideoClub.Entities.Entities;
-using VideoClub.Entities.Interfaces.Repositories;
-using VideoClub.UseCases.Specifications.ActorSpecifications;
 using VideoClub.BusinessRules.DTOs.ActorDTOs;
 using VideoClub.BusinessRules.DTOs.ValidationDTO;
 using VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.InputPorts;
 using VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters;
+using VideoClub.BusinessRules.PersonalException;
 using VideoClub.BusinessRules.Wrappers.Actor;
+using VideoClub.Entities.Entities;
+using VideoClub.Entities.Interfaces.Repositories;
+using VideoClub.UseCases.Specifications.ActorSpecifications;
 
 namespace VideoClub.UseCases.UseCases.ActorUseCase
 {
@@ -58,10 +59,10 @@ namespace VideoClub.UseCases.UseCases.ActorUseCase
                 await _repository.SaveChange();
                 actorResponse.IdActor = newActor.Id;
             }
-            catch (Exception ex)
+            catch (DBMySqlException ex)
             {
-                actorResponse.ErrorNumber = 500;
-                actorResponse.Message = $"Se produjo un error al guardar los datos. {ex.Message}";
+                actorResponse.ErrorNumber = ex.Number;
+                actorResponse.Message = ex.MessageError;
             }
             finally
             {
