@@ -12,7 +12,7 @@ namespace VideoClub.BusinessRules.Interfaces.Getways.ActorGetways.OutputPort
         /// Manejala respuesta que se le envia al Presenter con los detalles de la operación
         /// de actualización de una Actor en el contexto.
         /// </summary>
-        /// <param name="actor">Recibe un objeto WrapperCreateDeleteActor que contiene detalles sobre la operación.</param>
+        /// <param name="actor">Recibe un objeto WrapperCreateActor que contiene detalles sobre la operación.</param>
         Task Handle(WrapperUpdateActor actor);
     }
 

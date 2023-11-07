@@ -2,7 +2,7 @@
 {
     public class UpdateActorController : IUpdateActorController
     {
-        public Task<WrapperCreateDeleteActor> UpdateActor(UpdateActorRequest request)
+        public Task<WrapperCreateActor> UpdateActor(UpdateActorRequest request)
         {
             throw new NotImplementedException();
         }

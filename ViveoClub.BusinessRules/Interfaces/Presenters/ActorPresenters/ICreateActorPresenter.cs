@@ -13,6 +13,6 @@ namespace VideoClub.BusinessRules.Interfaces.Presenters.ActorPresenters
         /// Expone una propiedad Actor que contiene detalles sobre la operación
         /// de inserción.
         /// </summary>
-        WrapperCreateDeleteActor Actor { get; }
+        WrapperCreateActor Actor { get; }
     }
 }

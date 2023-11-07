@@ -12,9 +12,10 @@ namespace VideoClub.Controllers.ActorControllers
             _presenter = presenter;
         }
 
-        public async Task<WrapperCreateDeleteActor> CreateActor(CreateActorRequest request)
+        public async Task<WrapperCreateActor> CreateActor(CreateActorRequest request)
         {
             await _inputPort.Handle(request);
+
             return _presenter.Actor;
         }
     }

@@ -2,7 +2,7 @@
 
 namespace VideoClub.BusinessRules.Wrappers.Actor
 {
-    public class WrapperCreateDeleteActor : BaseWrappers
+    public class WrapperCreateActor : BaseWrappers
     {
         public int IdActor { get; set; }
         public List<ValidationErrorDTO>? ValidationErrors { get; set; }

@@ -5,6 +5,6 @@ namespace VideoClub.BusinessRules.Interfaces.Controllers.ActorControllers
 {
     public interface ICreateActorController
     {
-        Task<WrapperCreateDeleteActor> CreateActor(CreateActorRequest request);
+        Task<WrapperCreateActor> CreateActor(CreateActorRequest request);
     }
 }

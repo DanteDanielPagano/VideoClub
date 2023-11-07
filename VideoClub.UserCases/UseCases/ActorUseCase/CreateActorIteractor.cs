@@ -39,7 +39,7 @@ namespace VideoClub.UseCases.UseCases.ActorUseCase
         {
             List<ValidationErrorDTO> errors = new List<ValidationErrorDTO>();
             errors = ValidateActor(creatActorRequest);
-            WrapperCreateDeleteActor actorResponse = new();
+            WrapperCreateActor actorResponse = new();
 
             if (errors.Any())
             {

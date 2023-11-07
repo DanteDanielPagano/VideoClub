@@ -2,9 +2,9 @@
 {
     public class CreateActorPresenter : ICreateActorPresenter
     {
-        public WrapperCreateDeleteActor Actor { get; private set; } = new WrapperCreateDeleteActor();
+        public WrapperCreateActor Actor { get; private set; } = new WrapperCreateActor();
 
-        public Task Handle(WrapperCreateDeleteActor actor)
+        public Task Handle(WrapperCreateActor actor)
         {
 
             Actor.ErrorNumber = actor.ErrorNumber;

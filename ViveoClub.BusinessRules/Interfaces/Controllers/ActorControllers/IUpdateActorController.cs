@@ -5,6 +5,6 @@ namespace VideoClub.BusinessRules.Interfaces.Controllers.ActorControllers
 {
     public interface IUpdateActorController
     {
-        Task<WrapperCreateDeleteActor> UpdateActor(UpdateActorRequest request);
+        Task<WrapperCreateActor> UpdateActor(UpdateActorRequest request);
     }
 }
